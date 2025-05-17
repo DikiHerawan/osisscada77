@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIS SCADA 77 - SMKN 2 Kuningan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../osisscada77/assets/favicon.ico" type="image/x-icon">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/ADHIGANA.png" alt="Logo OSIS 77">
+               <span class="animated-logo">OSIS SCADA 77</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li class="dropdown">
+                    <a href="#">Kabinet <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="kabinet/2022.html">Kabinet 2022</a></li>
+                        <li><a href="kabinet/2023.html">Kabinet 2023</a></li>
+                        <li><a href="kabinet/2024.html">Kabinet 2024</a></li>
+                        <li><a href="#structure">Kabinet 2025</a></li>
+                        <li><a href="kabinet/2026.html">Kabinet 2026</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1>ORGANISASI SISWA INTRA SEKOLAH</h1>
+            <head>
+  <style>
+    a {
+      text-decoration: none; /* Menghilangkan garis bawah */
+      color: white; /* Mengubah warna teks menjadi putih */
+    }
+  </style>
+</head>
+            <a href="https://www.instagram.com/smkn2kngn/" target="_blank"><h2>SMK NEGERI 2 KUNINGAN</h2></a>
+            <i><p>#Sabisa Bisa Kudu Bisa Pasti Bisa Mun Teu Bisa Lain <b>SCADA</b></p></i>
+            <a href="#about" class="btn-primary">Jelajahi</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang <span>OSIS SCADA 77</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+    <p class="animated-text fade-in-up" data-delay="0.1"><b>OSIS 77 SMKN 2 Kuningan</b> adalah organisasi siswa yang berperan dalam merancang, mengelola, dan menjalankan berbagai kegiatan sekolah. Organisasi ini menjadi tempat siswa belajar tanggung jawab, kepemimpinan, dan kerja sama secara langsung melalui pengalaman nyata.</p>
+    
+    <p class="animated-text fade-in-up" data-delay="0.3">Dengan semangat <span class="highlighted-text">Solidaritas</span>, <span class="highlighted-text">Cakap</span>, <span class="highlighted-text">Amanah</span>, <span class="highlighted-text">Disiplin</span>, dan <span class="highlighted-text">Aktif</span>, OSIS mendorong terciptanya lingkungan sekolah yang aktif, positif, dan inspiratif bagi seluruh siswa.</p>
+    
+    <a href="kabinet/2024.html" class="btn-secondary floating-btn">Lihat Kepengurusan</a>
+</div>
+
+<style>
+    /* Base Styles */
+    .about-text {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.8;
+    }
+    
+    /* Text Animation */
+    .animated-text {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    
+    .animated-text.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Highlighted Words */
+    .highlighted-text {
+        position: relative;
+        display: inline-block;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    
+    .highlighted-text::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(90deg, var(--primary), rgba(79, 195, 247, 0.3));
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+    
+    .animated-text.visible .highlighted-text::after {
+        transform: scaleX(1);
+    }
+    
+    /* Button Animation */
+    .floating-btn {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50px;
+        transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    
+    .floating-btn.visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .floating-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: all 0.8s ease;
+    }
+    
+    .floating-btn:hover::before {
+        left: 100%;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about-text {
+            font-size: 0.95rem;
+        }
+        
+        .highlighted-text::after {
+            height: 4px;
+            bottom: 1px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Animate text on scroll
+        const animatedElements = document.querySelectorAll('.animated-text');
+        
+        const animateOnScroll = () => {
+            animatedElements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const delay = element.getAttribute('data-delay') || 0;
+                
+                if (elementPosition < window.innerHeight - 100) {
+                    setTimeout(() => {
+                        element.classList.add('visible');
+                        
+                        // Animate highlighted words after parent is visible
+                        if (element.querySelector('.highlighted-text')) {
+                            const highlights = element.querySelectorAll('.highlighted-text');
+                            highlights.forEach((highlight, index) => {
+                                setTimeout(() => {
+                                    highlight.style.opacity = 1;
+                                }, index * 200);
+                            });
+                        }
+                    }, delay * 1000);
+                }
+            });
+            
+            // Animate button
+            const btn = document.querySelector('.floating-btn');
+            const btnPosition = btn.getBoundingClientRect().top;
+            
+            if (btnPosition < window.innerHeight - 50) {
+                setTimeout(() => {
+                    btn.classList.add('visible');
+                }, 500);
+            }
+        };
+        
+        // Initial check
+        animateOnScroll();
+        
+        // Check on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    });
+</script>
+                <div class="about-image">
+                    <img src="assets/images/osisadhi.png" alt="Maskot OSIS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Section -->
+<section id="structure" class="structure">
+    <div class="container">
+        <h2 class="section-title">Struktur <span>PENGURUS 2025</span></h2>
+        <h4 class="section-title2">Kabinet ANANTA</h4>
+        <div class="org-chart">
+            <!-- Ketua -->
+            <div class="org-level">
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Ketua Umum</h3>
+                        <p>Badar Baihaqi Syabani Noorsy</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wakil Ketua -->
+            <div class="org-level">
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Ketua 1</h3>
+                        <p>Keyssa Salsabila</p>
+                    </div>
+                </div>
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Ketua 2</h3>
+                        <p>Ganendra Zildjian</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sekretaris & Bendahara -->
+            <div class="org-level">
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Sekretaris 1</h3>
+                        <p>Mega Sri Wulandari</p>
+                        <button class="btn-more" data-target="sekretaris1">Selengkapnya +</button>
+                        <div class="more-info" id="sekretaris1">
+                            <p><strong>Tugas:</strong> Mengkoordinasikan administrasi OSIS dan dokumentasi kegiatan</p>
+                            <p><strong>Kontak:</strong> 088272</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Sekretaris 2</h3>
+                        <p>Dinda Siti Adamiyah</p>
+                        <button class="btn-more" data-target="sekretaris2">Selengkapnya +</button>
+                        <div class="more-info" id="sekretaris2">
+                            <p><strong>Tugas:</strong> Membantu sekretaris 1 dalam administrasi harian</p>
+                            <p><strong>Kontak:</strong> 086565</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Bendahara 1</h3>
+                        <p>Tika Ramadhani</p>
+                        <button class="btn-more" data-target="bendahara1">Selengkapnya +</button>
+                        <div class="more-info" id="bendahara1">
+                            <p><strong>Tugas:</strong> Mengelola keuangan OSIS dan membuat laporan keuangan</p>
+                            <p><strong>Kontak:</strong> 087575</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-position">
+                    <div class="org-box">
+                        <h3>Bendahara 2</h3>
+                        <p>Siti Rania Syahla</p>
+                        <button class="btn-more" data-target="bendahara2">Selengkapnya +</button>
+                        <div class="more-info" id="bendahara2">
+                            <p><strong>Tugas:</strong> Membantu bendahara 1 dalam pengelolaan keuangan</p>
+                            <p><strong>Kontak:</strong> 083637333</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seksi Bidang Section -->
+        <div class="sekbid-section">
+            <h3 class="sekbid-title">SEKSI BIDANG</h3>
+            
+            <div class="sekbid-container">
+                <!-- SEKBID 1 -->
+                <div class="sekbid-card">
+                    <div class="sekbid-header">
+                        <h4>SEKBID 1 : PEMBINAAN KETAQWAAN TERHADAP TUHAN YANG MAHA ESA</h4>
+                        <button class="toggle-sekbid">
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="sekbid-content">
+                        <div class="member">
+                            <span class="role">Koordinator</span>
+                            <span class="name">Muhamad Najiuloh</span>
+                        </div>
+                        <div class="member">
+                            <span class="role">WaKoor</span>
+                            <span class="name">M. Ricko Ardiansyah</span>
+                        </div>
+                        <div class="member-group">
+                            <span class="role">Anggota</span>
+                            <div class="members-list">
+                                <span class="name">Nindy Intan Indriani</span>
+                                <span class="name">Elika Anastasya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEKBID 2 -->
+                <div class="sekbid-card">
+                    <div class="sekbid-header">
+                        <h4>SEKBID 2 : PEMBINAAN BUDI PEKERTI LUHUR ATAU AKHLAK MULIA</h4>
+                        <button class="toggle-sekbid">
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="sekbid-content">
+                        <div class="member">
+                            <span class="role">Koordinator</span>
+                            <span class="name">Dikha Fajriansah. W</span>
+                        </div>
+                        <div class="member">
+                            <span class="role">WaKoor</span>
+                            <span class="name">Kais Okta Abdillah</span>
+                        </div>
+                        <div class="member-group">
+                            <span class="role">Anggota</span>
+                            <div class="members-list">
+                                <span class="name">Dizzya Zulfa Salimah</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEKBID 3 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 3 : PEMBINAAN KEPRIBADIAN UNGGUL WAWASAN KEBANGSAAN DAN BELA NEGARA</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Aherdi</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">Yuda Aditya Pratama</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Amanda Khairunnisah</span>
+                <span class="name">Priska Putri</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 4 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 4 : PEMBINAAN PRESTASI AKADEMIK, SENI DAN/ATAU OLAHRAGA SESUAI BAKAT DAN MINAT</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Pikriyana</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">M. Miftahul Mubarok</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Taznia Nur Oktavia</span>
+                <span class="name">Fika Rahayu</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 5 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 5 : SEKSI DEMOKRASI, HAK ASASI MANUSIA, PENDIDIKAN POLITIK, LINGKUNGAN HIDUP, KEPEKAAN DAN TOLERANSI SOSIAL DALAM KONTEKS MASYARAKAT PLURAL</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Muhammad Afdhal Zikri</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">Praliamarti Purwakanti</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Risa Intan Lestari</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 6 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 6 : PEMBINAAN KREATIFITAS, KETERAMPILAN DAN KEWIRAUSAHAAN</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">M.Raffa Al Afghani</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">Muhammad Rafa</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Fika Fadhilawati</span>
+                <span class="name">Citra Erliana</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 7 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 7 : PEMBINAAN KUALITAS JASMANI, KESEHATAN DAN GIZI BERBASIS SUMBER GIZI YANG TERDIVERIFIKASI</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Aditya Anugerah Yanuar</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">M.Malik Prajadisastra</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Dewi Rizkiani</span>
+                <span class="name">Ranaya Anggraini</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 8 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 8 : PEMBINAAN SASTRA DAN BUDAYA</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Nur Alip</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">Artika Ayu Utami</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Muhammad Ridho</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 9 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 9 : PEMBINAAN TEKNOLOGI INFORMASI DAN KOMUNIKASI (TIK)</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Khoirul Adam</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">Nur Ipan</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Dea Jasiya Nurjihad</span>
+                <span class="name">Salzabila Putri</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SEKBID 10 -->
+<div class="sekbid-card">
+    <div class="sekbid-header">
+        <h4>SEKBID 10 : PEMBINAAN KOMUNIKASI DALAM BAHASA INGGRIS</h4>
+        <button class="toggle-sekbid">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+    </div>
+    <div class="sekbid-content">
+        <div class="member">
+            <span class="role">Koordinator</span>
+            <span class="name">Yuki Firmansyah</span>
+        </div>
+        <div class="member">
+            <span class="role">WaKoor</span>
+            <span class="name">M.Vicdan Kaishamam</span>
+        </div>
+        <div class="member-group">
+            <span class="role">Anggota</span>
+            <div class="members-list">
+                <span class="name">Apradhita Arahmi</span>
+            </div>
+        </div>
+    </div>
+</div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Base Styles */
+    .structure {
+        padding: 4rem 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        position: relative;
+    }
+    .section-title2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2.1rem;
+        position: relative;
+    }
+
+    .section-title span {
+        color: rgb(72, 175, 209);
+        position: relative;
+    }
+
+    .section-title span::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+        border-radius: 3px;
+    }
+
+    /* Organization Chart Styles */
+    .org-chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .org-level {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .org-position {
+        margin: 0 1rem 2rem;
+        min-width: 200px;
+    }
+
+    .org-box {
+        background-image: linear-gradient(45deg, rgba(0, 98, 255, 0.594), rgba(7, 32, 255, 0.475) 50%, rgba(0, 194, 223, 0.895));
+        background-color: var(--card-bg);
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.283);
+        text-align: center;
+        transition: all 0.3s ease;
+        border-top: 4px solid var(--primary);
+    }
+
+    .org-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .org-box h3 {
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .org-box p {
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    /* More Info Button Styles */
+    .btn-more {
+        background: transparent;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 0.5rem;
+    }
+
+    .btn-more:hover {
+        background-color: var(--primary);
+        color: white;
+    }
+
+    .more-info {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .more-info.active {
+        max-height: 200px;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    /* SEKBID Section Styles */
+    .sekbid-section {
+        margin-top: 3rem;
+    }
+
+    .sekbid-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: var(--primary);
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .sekbid-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .sekbid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .sekbid-card {
+        background-color: var(--card-bg);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.215);
+        transition: all 0.3s ease;
+    }
+
+    .sekbid-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 162, 255, 0.564);
+    }
+
+    .sekbid-header {
+        padding: 1.2rem;
+        background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        color: rgb(97, 97, 97);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .sekbid-header h4 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .toggle-sekbid {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .sekbid-card.active .toggle-sekbid {
+        transform: rotate(180deg);
+    }
+
+    .sekbid-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .sekbid-card.active .sekbid-content {
+        max-height: 500px;
+    }
+
+    .member {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .member-group {
+        padding: 1rem;
+    }
+
+    .role {
+        font-weight: 600;
+        color: var(--primary);
+    }
+
+    .name {
+        font-weight: 500;
+    }
+
+    .members-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    .members-list .name {
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 1.2rem;
+    }
+
+    .members-list .name::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: var(--secondary);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .org-position {
+            min-width: 160px;
+            margin: 0 0.5rem 1.5rem;
+        }
+
+        .sekbid-container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle more info for sekretaris & bendahara
+        const moreButtons = document.querySelectorAll('.btn-more');
+        moreButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const target = this.getAttribute('data-target');
+                const info = document.getElementById(target);
+                const isActive = info.classList.contains('active');
+                
+                // Close all first
+                document.querySelectorAll('.more-info').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Reset all buttons
+                moreButtons.forEach(btn => {
+                    btn.textContent = 'Selengkapnya +';
+                });
+                
+                // Toggle current
+                if (!isActive) {
+                    info.classList.add('active');
+                    this.textContent = 'Lebih Sedikit -';
+                }
+            });
+        });
+
+        // Toggle SEKBID cards
+        const sekbidHeaders = document.querySelectorAll('.sekbid-header');
+        sekbidHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const card = this.parentElement;
+                card.classList.toggle('active');
+                
+                // Close other cards when opening one
+                if (card.classList.contains('active')) {
+                    document.querySelectorAll('.sekbid-card').forEach(item => {
+                        if (item !== card) {
+                            item.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Animate on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.org-box, .sekbid-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Set initial state
+        document.querySelectorAll('.org-box, .sekbid-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'all 0.5s ease';
+        });
+
+        // Run once on load
+        animateOnScroll();
+        
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    });
+</script>  <!-- Sekbid -->
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="assets/images/dari_ADHIGANA.png" alt="Logo OSIS">
+                    <p>Pengurus OSIS 77 SMK Negeri 2 Kuningan<br>Jl. Sukamulya No. 77, Sukamulya, Kec. Cigugur, Kab.Kuningan, Jawa Barat.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="kabinet/2024.html">Kabinet</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="artikel.html">Artikel</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-envelope"></i> osisscada77@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PENGURUS OSIS SCADA 77. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

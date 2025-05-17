@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Multimedia | OSIS SMKN 2 Kuningan</title>
+    <link rel="icon" href="../osisscada77/assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/galeri.css">
+</head>
+<body>
+    <!-- 3D Navigation Sphere -->
+    <div class="nav-sphere">
+        <div class="sphere-container">
+            <div class="sphere">
+                <a href="#foto" class="sphere-item" data-tooltip="Foto"><i class="bi bi-camera-fill"></i></a>
+                <a href="#video" class="sphere-item" data-tooltip="Video"><i class="bi bi-camera-reels-fill"></i></a>
+                <a href="#kegiatan" class="sphere-item" data-tooltip="Kegiatan"><i class="bi bi-calendar-event-fill"></i></a>
+                <a href="#prestasi" class="sphere-item" data-tooltip="Prestasi"><i class="bi bi-trophy-fill"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Theme Controller -->
+    <div class="theme-controller">
+        <div class="controller-wheel">
+            <button class="theme-option" data-theme="default"></button>
+            <button class="theme-option" data-theme="dark"></button>
+            <button class="theme-option" data-theme="vintage"></button>
+            <button class="theme-option" data-theme="modern"></button>
+        </div>
+        <button class="controller-btn"><i class="bi bi-palette-fill"></i></button>
+    </div>
+
+    <!-- Main Gallery -->
+    <main class="gallery-container">
+        <!-- Hero Gallery -->
+        <section class="gallery-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">GALERI <span>MULTIMEDIA</span></h1>
+                <p class="hero-subtitle">Momen Berharga Bersama Kegiatan OSIS SMKN 2 Kuningan</p>
+                <div class="hero-scroll">
+                    <div class="scroll-animation"></div>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="bg-particle"></div>
+                <div class="bg-particle"></div>
+                <div class="bg-particle"></div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="foto" class="media-section photo-gallery">
+            <div class="section-header">
+                <h2 class="section-title"><span class="title-decor">#</span>GALERI FOTO</h2>
+                <div class="section-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+                    <button class="filter-btn" data-filter="prestasi">Prestasi</button>
+                    <button class="filter-btn" data-filter="harian">Harian</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Photo Item 1 -->
+                <div class="photo-item" data-category="kegiatan">
+                    <div class="photo-card">
+                        <div class="photo-media">
+                            <img src="assets/images/gallery/foto1.JPG" alt="Pelantikan OSIS" class="photo-img">
+                            <div class="photo-overlay">
+                                <button class="view-btn"><i class="bi bi-arrows-angle-expand"></i></button> 
+                                <div class="photo-credit">
+                                    <a href="https://instagram.com/osisscada.official" target="_blank" class="credit-link">
+                                        <i class="bi bi-instagram"></i> @osisscada.official
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-caption">
+                            <h3 class="photo-title">Pelantikan Pengurus OSIS</h3>
+                            <p class="photo-desc">Momen serah terima jabatan pengurus OSIS periode 2023/2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More photo items..2. -->
+                 <div class="photo-item" data-category="kegiatan">
+                    <div class="photo-card">
+                        <div class="photo-media">
+                            <img src="assets/images/gallery/pesona.JPG" alt="Pelantikan OSIS" class="photo-img">
+                            <div class="photo-overlay">
+                                <button class="view-btn"><i class="bi bi-arrows-angle-expand"></i></button> 
+                                <div class="photo-credit">
+                                    <a href="https://www.instagram.com/multimedia_scada77/" target="_blank" class="credit-link">
+                                        <i class="bi bi-instagram"></i>@multimedia_scada77
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-caption">
+                            <h3 class="photo-title">Last Day PESONA  2024 </h3>
+                            <p class="photo-desc">PEKAN SENI OLAHRAGA SCADA 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More photo items 3 -->
+                 <div class="photo-item" data-category="kegiatan">
+                    <div class="photo-card">
+                        <div class="photo-media">
+                            <img src="assets/images/gallery/foto1.JPG" alt="Pelantikan OSIS" class="photo-img">
+                            <div class="photo-overlay">
+                                <button class="view-btn"><i class="bi bi-arrows-angle-expand"></i></button> 
+                                <div class="photo-credit">
+                                    <a href="https://instagram.com/osisscada.official" target="_blank" class="credit-link">
+                                        <i class="bi bi-instagram"></i> @osisscada.official
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-caption">
+                            <h3 class="photo-title">Pelantikan Pengurus OSIS</h3>
+                            <p class="photo-desc">Momen serah terima jabatan pengurus OSIS periode 2023/2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More photo items  4 -->
+                 <div class="photo-item" data-category="kegiatan">
+                    <div class="photo-card">
+                        <div class="photo-media">
+                            <img src="assets/images/gallery/pesona.JPG" alt="Pelantikan OSIS" class="photo-img">
+                            <div class="photo-overlay">
+                                <button class="view-btn"><i class="bi bi-arrows-angle-expand"></i></button> 
+                                <div class="photo-credit">
+                                    <a href="https://www.instagram.com/multimedia_scada77/" target="_blank" class="credit-link">
+                                        <i class="bi bi-instagram"></i>@multimedia_scada77
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-caption">
+                            <h3 class="photo-title">Last Day PESONA  2024 </h3>
+                            <p class="photo-desc">PEKAN SENI OLAHRAGA SCADA 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <div class="gallery-controls">
+                <button class="control-btn prev-btn"><i class="bi bi-chevron-left"></i></button>
+                <div class="gallery-pagination"></div>
+                <button class="control-btn next-btn"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Video Gallery -->
+        <section id="video" class="media-section video-gallery">
+            <div class="section-header">
+                <h2 class="section-title"><span class="title-decor">#</span>GALERI VIDEO</h2>
+                <div class="section-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="dokumentasi">Dokumentasi</button>
+                    <button class="filter-btn" data-filter="creative">Kreatif</button>
+                    <button class="filter-btn" data-filter="edukasi">Edukasi</button>
+                </div>
+            </div>
+
+            <div class="video-grid">
+                <!-- Video Item 1 -->
+                <div class="video-item" 
+                data-video-id="VIDEO_ID_ASLI"
+                data-yt-url="https://youtu.be/xIMF7Zu4AdA?si=2wxO6EgPg8aqp6_8">
+                    <div class="video-card">
+                        <div class="video-media">
+                            <div class="video-thumbnail">
+                                <img src="assets/images/gallery/Ketarunaan.jpg" alt="Video Dokumentasi" class="video-img">
+                                <div class="play-overlay">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                            </div>
+                            <div class="video-duration">13:22</div>
+                        </div>
+                        <div class="video-caption">
+                            <h3 class="video-title">Kegiatan Ketarunaan 2024 Pt 1</h3>
+                            <p class="video-desc">Dokumentasi Ketarunaan Smkn 2 Kuningan Ke 3</p>
+                            <div class="video-credit">
+                                <a href="https://youtu.be/xIMF7Zu4AdA?si=2wxO6EgPg8aqp6_8" target="_blank" class="credit-link">
+                                    <i class="bi bi-youtube"></i> SMKN 2 KNGN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More video items... -->
+                 <!-- Video Item 2 -->
+                <div class="video-item" data-category="dokumentasi" data-video-id="dQw4w9WgXcQ">
+                    <div class="video-card">
+                        <div class="video-media">
+                            <div class="video-thumbnail">
+                                <img src="assets/images/gallery/HutScada.jpg" alt="Video Dokumentasi" class="video-img">
+                                <div class="play-overlay">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                            </div>
+                            <div class="video-duration">6:29</div>
+                        </div>
+                        <div class="video-caption">
+                            <h3 class="video-title">HUT SCADA 2024</h3>
+                            <p class="video-desc">HUT SMKN 2 KUNINGAN KE 59</p>
+                            <div class="video-credit">
+                                <a href="https://youtu.be/GJz9KJ0VIt8?si=TaHeq3jFJMbOyLZu" target="_blank" class="credit-link">
+                                    <i class="bi bi-youtube"></i> SMKN 2 KNGN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Item 3-->
+                 <!-- Video Item  -->
+                <div class="video-item" data-category="dokumentasi" data-video-id="dQw4w9WgXcQ">
+                    <div class="video-card">
+                        <div class="video-media">
+                            <div class="video-thumbnail">
+                                <img src="assets/images/gallery/Ketarunaan2024PT2.jpg" alt="Video Dokumentasi" class="video-img">
+                                <div class="play-overlay">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                            </div>
+                            <div class="video-duration">13:22</div>
+                        </div>
+                        <div class="video-caption">
+                            <h3 class="video-title">Kegiatan Ketarunaan 2024 Pt 2</h3>
+                            <p class="video-desc">Dokumentasi Ketarunaan Smkn 2 Kuningan Ke 4</p>
+                            <div class="video-credit">
+                                <a href="https://youtu.be/xIMF7Zu4AdA?si=2wxO6EgPg8aqp6_8" target="_blank" class="credit-link">
+                                    <i class="bi bi-youtube"></i> SMKN 2 KNGN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Video Item 4 -->
+                <div class="video-item" data-category="dokumentasi" data-video-id="dQw4w9WgXcQ">
+                    <div class="video-card">
+                        <div class="video-media">
+                            <div class="video-thumbnail">
+                                <img src="assets/images/gallery/MPLS2024.jpg" alt="Video Dokumentasi" class="video-img">
+                                <div class="play-overlay">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </div>
+                            </div>
+                            <div class="video-duration">13:22</div>
+                        </div>
+                        <div class="video-caption">
+                            <h3 class="video-title">MPLS 2024</h3>
+                            <p class="video-desc">MPLS SMK NEGERI 2 KUNINGAN TAHUN 2024</p>
+                            <div class="video-credit">
+                                <a href="https://www.youtube.com/watch?v=uSGMik0lx_g" target="_blank" class="credit-link">
+                                    <i class="bi bi-youtube"></i> SMKN 2 KNGN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Interactive Timeline -->
+        <section id="kegiatan" class="timeline-section">
+            <div class="timeline-header">
+                <h2 class="section-title"><span class="title-decor">#</span>LINIMASA KEGIATAN</h2>
+                <div class="timeline-controls">
+                    <button class="timeline-filter active" data-year="all">Semua</button>
+                    <button class="timeline-filter" data-year="2024">2024</button>
+                    <button class="timeline-filter" data-year="2023">2023</button>
+                    <button class="timeline-filter" data-year="2022">2022</button>
+                </div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-progress"></div>
+                
+                <!-- More timeline items 1... -->
+                 <div class="timeline-item" data-year="2024">
+                    <div class="timeline-card">
+                        <div class="timeline-date">Mei 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Perpisahan Purna OSIS ADHIGANA</h3>
+                            <p class="timeline-desc">Serah terima jabatan pengurus OSIS periode baru</p>
+                            <div class="timeline-media">
+                                <img src="assets/images/timeline/perpisahan25.jpeg" alt="Pelantikan">
+                                <button class="view-btn timeline-view"><i class="bi bi-arrows-angle-expand"></i></button>
+                            </div>
+                            <div class="timeline-credit">
+                                <a href="https://instagram.com/fotografer_osis" target="_blank" class="credit-link">
+                                    <i class="bi bi-instagram"></i> @fotografer_osis
+                                </a>
+                            </div>
+                            </div>
+                            <button class="timeline-more">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-card">
+                        <div class="timeline-date">Sept 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">LDKS 2024</h3>
+                            <p class="timeline-desc">Latihan Dasar kepemimpinan pengurus OSIS </p>
+                            <div class="timeline-media">
+                                <img src="assets/images/timeline/ldks.jpeg" alt="Pelantikan">
+                                <button class="view-btn timeline-view"><i class="bi bi-arrows-angle-expand"></i></button>
+                            </div>
+                            <div class="timeline-credit">
+                                <a href="https://instagram.com/osisscada.official" target="_blank" class="credit-link">
+                                    <i class="bi bi-instagram"></i>osisscada.official
+                                </a>
+                            </div>
+                            <button class="timeline-more">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Media Lightbox Modal -->
+    <div class="media-lightbox">
+        <div class="lightbox-container">
+            <button class="lightbox-close"><i class="bi bi-x-lg"></i></button>
+            <button class="lightbox-nav prev-nav"><i class="bi bi-chevron-left"></i></button>
+            
+            <div class="lightbox-content">
+                <div class="media-display">
+                    <!-- Content will be inserted here dynamically -->
+                </div>
+                
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title"></h3>
+                    <p class="lightbox-desc"></p>
+                    <div class="lightbox-meta">
+                        <span class="lightbox-date"></span>
+                        <span class="lightbox-views"></span>
+                    </div>
+                    <div class="lightbox-credit">
+                        <a href="#" target="_blank" class="credit-link"></a>
+                    </div>
+                    <div class="lightbox-actions">
+                        <button class="action-btn youtube-btn" style="display: none;">
+                            <i class="bi bi-youtube"></i> Tonton di YouTube
+                        </button>
+                        <button class="action-btn ig-btn" style="display: none;">
+                            <i class="bi bi-instagram"></i> Kunjungi Profil
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="lightbox-nav next-nav"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/galeri.js"></script>
+</body>
+</html>
